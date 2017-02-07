@@ -1,0 +1,179 @@
+[
+    {
+        "name" : "Jay Sobel*",
+        "year" : "17",
+        "image" : "img/lee.jpg",
+        "division" : "D2",
+        "position" : "jungle",
+        "stats" : "",
+        "games" : "lol ow",
+        "flag" : "img/flag_usa.svg",
+        "keyword" : "coordinator"
+    },
+    {
+        "name" : "Nat Johnson",
+        "year" : "17",
+        "image" : "img/gragas.jpg",
+        "division" : "D2",
+        "position" : "support",
+        "stats" : "",
+        "games" : "lol ow",
+        "flag" : "img/flag_usa.svg",
+        "keyword" : ""
+    },
+    {
+        "name" : "Nicholas Song*",
+        "year" : "19",
+        "image" : "img/blank.png",
+        "division" : "D2",
+        "position" : "ADC",
+        "stats" : "",
+        "games" : "lol",
+        "flag" : "img/flag_hong_kong.svg",
+        "keyword" : "coordinator"
+    },
+    {
+        "name" : "Dale Frost",
+        "year" : "19",
+        "image" : "img/blank.png",
+        "division" : "D2",
+        "position" : "jungle",
+        "stats" : "",
+        "games" : "lol",
+        "flag" : "img/flag_usa.svg",
+        "keyword" : ""
+    },
+    {
+        "name" : "Amanda Preston",
+        "year" : "17",
+        "image" : "img/blank.png",
+        "division" : "D2",
+        "position" : "tbd",
+        "stats" : "",
+        "games" : "lol",
+        "flag" : "img/flag_usa.svg",
+        "keyword" : ""
+    },
+    {
+        "name" : "Austin Tam",
+        "year" : "18",
+        "image" : "img/blank.png",
+        "division" : "D2",
+        "position" : "tbd",
+        "stats" : "",
+        "games" : "lol",
+        "flag" : "img/flag_usa.svg",
+        "keyword" : ""
+    },
+    {
+        "name" : "David Gingold",
+        "year" : "19",
+        "image" : "img/blank.png",
+        "division" : "D2",
+        "position" : "tbd",
+        "stats" : "",
+        "games" : "lol",
+        "flag" : "img/flag_usa.svg",
+        "keyword" : ""
+    },
+    {
+        "name" : "Kevin Tan",
+        "year" : "18",
+        "image" : "img/blank.png",
+        "division" : "D2",
+        "position" : "tbd",
+        "stats" : "",
+        "games" : "lol",
+        "flag" : "img/flag_usa.svg",
+        "keyword" : ""
+    },
+    {
+        "name" : "Luke Graham",
+        "year" : "18",
+        "image" : "img/blank.png",
+        "division" : "D2",
+        "position" : "tbd",
+        "stats" : "",
+        "games" : "lol",
+        "flag" : "img/flag_usa.svg",
+        "keyword" : ""
+    },
+    {
+        "name" : "Leo Korf",
+        "year" : "18",
+        "image" : "img/zed.jpg",
+        "division" : "D1",
+        "position" : "tbd",
+        "stats" : "",
+        "games" : "ow",
+        "flag" : "img/flag_usa.svg",
+        "keyword" : ""
+    },
+    {
+        "name" : "Justin Tam",
+        "year" : "19",
+        "image" : "img/blank.png",
+        "division" : "D1",
+        "position" : "tbd",
+        "stats" : "",
+        "games" : "lol ow",
+        "flag" : "img/flag_usa.svg",
+        "keyword" : ""
+    },
+    {
+        "name" : "Adam Bolling",
+        "year" : "19",
+        "image" : "img/blank.png",
+        "division" : "D1",
+        "position" : "tbd",
+        "stats" : "",
+        "games" : "ow",
+        "flag" : "img/flag_usa.svg",
+        "keyword" : ""
+    },
+    {
+        "name" : "Shaw Lenox",
+        "year" : "20",
+        "image" : "img/blank.png",
+        "division" : "D1",
+        "position" : "tbd",
+        "stats" : "",
+        "games" : "ow",
+        "flag" : "img/flag_usa.svg",
+        "keyword" : ""
+    },
+    {
+        "name" : "Freddy Amara",
+        "year" : "18",
+        "image" : "img/blank.png",
+        "division" : "D1",
+        "position" : "tbd",
+        "stats" : "",
+        "games" : "ow",
+        "flag" : "img/flag_usa.svg",
+        "keyword" : ""
+    },
+    {
+        "name" : "Bryce Wall",
+        "year" : "20",
+        "image" : "img/blank.png",
+        "division" : "D1",
+        "position" : "tbd",
+        "stats" : "",
+        "games" : "ow",
+        "flag" : "img/flag_usa.svg",
+        "keyword" : ""
+    },
+    {
+        "name" : "Ben Eskin Shapson*",
+        "year" : "18",
+        "image" : "img/blank.png",
+        "division" : "D1",
+        "position" : "tbd",
+        "stats" : "",
+        "games" : "ow",
+        "flag" : "img/flag_usa.svg",
+        "keyword" : "coordinator"
+    }
+]
+

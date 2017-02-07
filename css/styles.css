@@ -1,0 +1,1429 @@
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    box-sizing:border-box;
+/*    /cursor: default;*/
+}
+i, a{
+    cursor:pointer;
+}
+*::selection, br::selection{
+    background: #ffcc00;
+}
+*::-moz-selection{
+    background: #ffcc00;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    overflow-x:hidden;
+	line-height: 1;
+    width:100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+ol, ul {
+	list-style: none;
+}
+a{
+    color:inherit;
+    text-decoration:none;
+}
+a:link {
+    color:inherit;
+    text-decoration:none;
+}
+a:visited {
+    color:inherit;
+    text-decoration:none;
+}
+a:active {
+    color:inherit;
+    text-decoration:none;
+}
+/*Google fonts*/
+@font-face {
+    font-family: league-gothic;
+    src: url(LeagueGothic-Regular.otf);
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'league-gothic', sans-serif;
+}
+body{
+    font-family: 'Rubik', serif;
+}
+p{
+    line-height:1.4;
+    font-size:16px;
+}
+/*===============================================================
+Custom Styles
+=================================================================
+*/
+/*FAVICON GENERATION (works with favicon.html*/
+@font-face {
+    font-family: code-pro;
+    src: url(code-pro.otf);
+}
+.back{
+    background:#221E1F;
+    width:900px;
+    height:900px;
+    font-family:'code-pro';
+    position:relative;
+    display:table;
+    overflow:hidden;
+}
+.back p{
+    font-weight:600;
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+    width:100%;
+    height:100%;
+    line-height:900px;
+    font-family:'code-pro';
+    font-size:500px;
+    transform:rotate(-45deg);
+    padding-top:60px;
+}
+.back span:nth-child(1){
+    color: #ff8000;
+}
+.back span:nth-child(2){
+    color:#ffcc00;
+}
+.back span:nth-child(3){
+    color:#A6FF00;
+}
+/*Page-wide Generic Styles*/
+section{
+    overflow:hidden;
+}
+/*most important style on the sheet*/
+section.games, 
+section.leadership,
+section.competitive,
+section.club-swag,
+section.get-involved{
+    box-shadow: inset 0 5px 20px -5px #333;
+}
+
+.content-width{
+    width:100%;
+    max-width:960px;
+    margin:0 auto;
+    height:100%;
+}
+.content-wide{
+    width:100%;
+    padding: 0px 0px 50px;
+    text-align:center;
+    //max-width:1680px;
+    margin:0 auto;
+}
+.cf:before,
+.cf:after {
+    content: "";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.pad{
+    padding: 60px 0px 60px;
+}
+/*initiate 50-50 sections*/
+.get-involved > div{
+    font-size:0;
+}
+.club-swag > div{
+    font-size:0;
+}
+.width-50{
+    font-size:initial;
+    width:50%;
+    display:inline-block;
+    vertical-align:top;
+}
+.width-50:first-child{
+    padding-right:20px;
+}
+.width-50:last-child{
+    padding-left:20px;
+}
+.width-33{
+    width:33.3333%;
+    display:inline-block;
+    font-size:initial;
+}
+h2{
+    text-transform:uppercase;
+    font-size:58px;
+    letter-spacing: 1px;
+    font-weight:400;
+    margin-bottom:30px;
+}
+body{
+    margin-top:75px;
+}
+.copy p{
+    font-size:20px;
+    font-weight:300;
+}
+.copy a{
+    border-bottom:2px solid #ffcc00;
+}
+p.caption{
+    font-size:12px;
+    margin:0;
+}
+/*========END GENERICS======*/
+/*Nav Elements*/
+nav{
+    z-index:100;
+    position:fixed;
+    top:0;
+    height:75px;
+    width:100%;
+    background: #eee;
+    color:#1F1F1F;
+    font-family:'Open-sans', sans-serif;
+    font-size:20px;
+    border-bottom:1px solid black;
+}
+/*burger*/
+.burger{display:none;}
+.mustard{color: #ffcc00;}
+/*logo*/
+nav img{
+    position:absolute;
+    width:160px;
+    top:5px;
+    left:50%;
+    margin-left:-80px;
+    z-index:100;
+    pointer-events:none;
+}
+.nav-left{
+    float:left;
+    width:45%;
+    margin-right:10%;
+}
+.nav-right{
+    text-align:right;
+    float:left;
+    width:45%;
+}
+nav li{
+    display:inline-block;
+    line-height:70px;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight:700;
+}
+/*height propogates*/
+nav a{
+    display:block;
+    height:75px;
+    position:relative;
+}
+nav a:hover:after,nav a:hover:before{
+    background:#ffcc00;
+}
+nav a:after, nav a:before{
+    content:"";
+    background:#1F1F1F;
+    position:absolute;
+    width:2px;
+    height:6px;
+    left:50%;
+    margin-left: -1px;
+    top:15px;
+    transition: all .2s ease-in-out;
+}
+nav a:before{
+    top:auto;
+    bottom:21px;
+}
+nav li:first-child{
+    margin-right:25%;
+}
+.hd-option{
+    display:none;
+}
+/*Hero Section*/
+.argo{
+    overflow:hidden;
+    width:100%;
+    position:relative;
+}
+.hero{
+    width: 100%;
+    height:700px;
+    background-image:url('../img/hero.jpg');
+    background-position:50% 45%;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+body.hd-img .hero{
+    background-image:url('../img/hero_full_res.jpg');
+}
+.hero h1{
+    width:auto;
+    position:absolute;
+    top:50%;
+    margin-top:-100px;
+    left:50%;
+    margin-left:-340px;
+    font-size:130px;
+    color:white;
+    text-transform:uppercase;
+    text-shadow: 2px 2px 0px rgb(159,0,159);
+}
+/*Divider Elements*/
+.divider{
+    height:110px;
+    background:#ffcc00;
+    text-align:center;
+    line-height:115px;
+    //line-height:0px;
+}
+/*
+.divider h2{
+    vertical-align:middle;
+    display:inline-block;
+    margin-right:10px;
+    margin-top:28px;
+}
+.divider img{
+    display:inline-block;
+    vertical-align:middle;
+    height:110px;
+    width:210px;
+}
+*/
+/*Games Elements*/
+.games{
+    background:#eee;
+}
+.game-grid{
+    width:100%;
+    height:100%;
+    margin-top:20px;
+}
+.game-item{
+    position: relative;
+    float:left;
+    background: #000;
+    overflow:hidden;
+    width:32%;
+    margin-top:2%;
+    padding-bottom:32%;
+}
+/*selecting items in the grid for horizontal margins:
+[ ][x][ ]
+[ ][x][ ]
+*/
+.game-item:nth-child(2), .game-item:nth-child(5){
+    margin-left:2%;
+    margin-right:2%;
+}
+.game-item .game-img{
+    position:absolute;
+    width:100%;
+}
+/*Game Logo in white with transparent background*/
+.game-item .logo{
+    position:absolute;
+    width:60%;
+    height:60%;
+    left:20%;
+    top:20%;
+    opacity:0;
+    -webkit-backface-visibility: hidden;
+    transition: opacity .5s ease-in-out;
+}
+/*colored as per the game's theme colors*/
+.game-overlay, .swag-overlay{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: rgb(106,90,205);
+    opacity:0;
+    transition: opacity .5s ease-in-out;
+    pointer-events:none;
+}
+.game-item:hover .logo{
+    opacity:1;
+}
+.game-item:hover .game-overlay{
+    opacity: .7;
+}
+/*game colors*/
+.game-item:nth-child(1) .game-overlay{
+/*    lol*/
+    background-color:#1062A0;
+}
+.game-item:nth-child(2) .game-overlay{
+/*    Overwatch*/
+    background-color:#FA9C1E;
+}
+.game-item:nth-child(3) .game-overlay{
+/*    dota*/
+    background-color:#9D150E;
+}
+.game-item:nth-child(4) .game-overlay{
+/*    hearthstone*/
+    background-color:#CE9D27;
+}
+.game-item:nth-child(5) .game-overlay{
+/*    smash*/
+    background-color:#AC0007;
+}
+.game-item:nth-child(6) .game-overlay{
+/*    csgo*/
+    background-color:#CA8229;
+}
+/*fixed image Ribbons*/
+.rib{
+    height:1000px;
+    width:100%;
+    background: url("") no-repeat fixed;
+    background-size:cover;
+    background-position:center;
+}
+.rib.battle{
+    background-image: url('../img/battlestation.jpg');
+}
+.rib.swag{
+    background-image: url('../img/swag_array.jpg');
+}
+body.hd-img .rib.battle{
+    background-image:url('../img/battlestation_full_res.jpg');
+}
+body.hd-img .rib.swag{
+    background-image:url('../img/swag_array_full_res.jpg');
+}
+/*Leadership Elements*/
+.leadership{
+    background: #ffcc00;
+}
+.leadership .content-width{
+    padding-bottom:35px;
+    text-align:left;
+}
+.content-width h2{
+    text-align: center;
+}
+.content-width h2 > span{
+    position:relative;
+}
+.content-width h2 > span:after, 
+.content-width h2 > span:before{
+    content: "";
+    width: 24px;
+    height: 5px;
+    background: white;
+    top: calc(50% - 5px);
+    position:absolute;
+}
+.content-width h2 > span:after{
+    /*width + 15*/
+    right: -40px;
+}
+.content-width h2 > span:before{
+    left: -45px;
+}
+.content-width h2 > .black-whisker:before, 
+.content-width h2 > .black-whisker:after{
+    background:black;
+}
+.led-card{
+    display:inline-block;
+    margin:15px;
+    max-width:100%;
+}
+.led-pic{
+    height:330px;
+    width:450px;
+    max-width:100%;
+    margin-bottom:6px;
+    overflow:hidden;
+    background: #0F5230;
+}
+.led-pic img{
+    margin:0 auto;
+    height:100%;
+    width:auto;
+}
+.led-title{
+    float:left;
+    text-align:left;
+}
+.leadership h3{
+    font-family:'Rubik',sans-serif;
+    font-size:24px;
+    line-height:1;
+    font-weight:600;
+    margin-top:-2px;
+    margin-bottom:2px;
+}
+.leadership h4{
+    font-family:'Rubik',sans-serif;
+    font-size:18px;
+    letter-spacing: -.5px;;
+    text-transform:lowercase;
+    color: rgb(60,60,60);
+}
+.led-blox{
+    float:right;
+    text-align:right;
+}
+.led-card li{
+    display:inline-block;
+    vertical-align:top;
+    width:45px;
+    height:45px;
+    margin-right: 6px;
+    margin-top:0px;
+}
+.led-card li a{
+    width:100%;
+    height:100%;
+    display:inline-block;
+}
+.led-card li a img{
+    width:100%;
+}
+.led-card li a i{
+    width:100%;
+    height:100%;
+    line-height:48px;
+    text-align:center;
+    font-size:28px;
+    padding-left:1px;
+}
+.led-blox li, .block-social-links ul li{
+    overflow:hidden;
+    transition: all .3s ease-in-out;
+}
+.led-blox li:hover, .block-social-links ul li:hover{
+    border-radius:50%;
+}
+/*leader card icon styles*/
+li a i.fa-facebook{
+    background: #3b5998;
+    color:white;
+}
+li a i.fa-twitter{
+    background: #55acee;
+    color:white;
+}
+li a i.fa-instagram{
+    line-height:45px;
+    background: #231F20;
+    color: white;
+    font-size: 30px;
+}
+li a i.fa-youtube-play{
+    line-height:45px;
+    background: #e52d27;
+    color:white;
+}
+li a i.fa-youtube{
+    background: #e52d27;
+    color:white;
+}
+li a i.fa-twitch{
+    background: #6541A5;
+    color:#F1F1F1;
+}
+.fa.fa-twitch {
+    padding-top: 5px;
+}
+li a i.fa-graduation-cap{
+    background: #0F5230;
+    color: white;
+}
+li a i.fa-code{
+    background: #DD3825;
+    color: #1F1F1F;
+    font-weight:600;
+}
+.led-card li:last-child{
+    margin-right:0;
+}
+/*Competitive Elements*/
+.competitive{
+    background-image: url('../img/bg-dubs.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #0F5230;
+    background-size:cover;
+    color:white;
+}
+.competitive .content-wide{
+    padding-bottom:40px;
+    max-width: 1500px;
+}
+.competitive article p{
+    margin-bottom:15px;
+    text-indent: 60px;
+}
+.competitive .search{
+    text-align:left;
+    padding-bottom:30px;
+    border-bottom:3px solid white;
+    margin-bottom:30px;
+    width: 960px;
+    max-width:90%;
+}
+.search h3{
+    font-size:32px;
+    letter-spacing: .5px;
+    text-align:center;
+    margin-bottom:10px;
+}
+/*generics*/
+input[type="text"]{
+    height:45px;
+    line-height:1.1;
+    width:280px;
+    max-width:100%;
+    margin:0 auto;
+    display:block;
+    background:transparent;
+    font-size:20px;
+    padding: 0px 15px 0px;
+    overflow:hidden;
+    border: 2px solid white;
+    border-radius:0px;
+    color:white;
+}
+input[type="text"]:focus{
+    outline: none;
+    border: 2px solid #ffcc00;
+}
+input:-moz-placeholder{padding-top:2px;color:#DEDEDE;}
+input:-ms-input-placeholder{padding-top:2px;color:#DEDEDE;}
+input::-webkit-input-placeholder{padding-top:2px;color:#DEDEDE;}
+/*checkbox styles*/
+input.game-toggle{
+    display:none;
+}
+.check-container{
+    width:284px;
+    max-width:100%;
+    text-align:center;
+    margin: 8px auto 2px;
+    display:block;
+    font-size:0px;
+}
+.search .caption{
+    text-align:Center;
+}
+/*if only two games*/
+/*
+.check-container > div{
+    display:inline-block;
+    width: 48%;
+    margin-right:4%;
+}
+*/
+.check-container > div{
+    display:inline-block;
+    width: 46%;
+    margin-right: 3%;
+}
+.check-container > div:last-child{
+    margin-right:0;
+}
+.check-container > div label{
+    width:100%;
+}
+.fancy-checkbox{
+    position:relative;
+    display:block;
+    width:100%;
+    height:50px;
+    cursor:pointer;
+    background-size: cover;
+    background-position:center center;
+    
+    border:2px solid transparent;
+    transition: all .3s ease-in-out;
+}
+.fancy-checkbox:hover{
+    border-radius:25px;
+}
+.fancy-checkbox.check-active{
+    border: 2px solid #ffcc00;
+    border-radius:25px;
+}
+.fancy-checkbox.ow{
+    background-image: url('../img/ow_butn.png');
+}
+.fancy-checkbox.dota{
+    background-image: url('../img/dota_butn.png');
+}
+.fancy-checkbox.lol{
+    background-image: url('../img/lol_butn.png');
+}
+.fancy-checkbox.hearthstone{
+    background-image: url('../img/hearthstone_butn.png');
+}
+/*the borders get real messy*/
+.player-card{
+    width:350px;
+    max-width:100%;
+    height:80px;
+    display:inline-block;
+    margin:10px;
+    border: 2px solid #ffcc00;
+    position:relative;
+}
+.player-card > a{
+    position:relative;
+    height:76px;
+    width:76px;
+    float:left;
+    cursor:pointer;
+    font-size:50px;
+    line-height:85px;
+    overflow:hidden;
+    
+    font-size:50px;
+    cursor:pointer;
+    pointer-events:none;
+}
+.player-card > a > img{
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:auto;
+    z-index:12;
+    font-size:0px;
+}
+.player-card > a > i{
+    position:absolute;
+    line-height:85px;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index:11;
+}
+.player-info{
+    width: calc(100% - 76px);
+    float:left;
+    height:100%;
+    border-left: 2px solid #ffcc00;
+}
+.player-info > div{
+    height:50%;
+    overflow:hidden;
+}
+.player-info > div:first-child{
+    width: 100%;
+    border-bottom:2px solid #ffcc00;
+}
+.player-title h4, .player-title h5{
+    color:white;
+    font-family: 'league-gothic', sans-serif;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+    font-size:25px;
+    padding: 7px 0px 0px 13px;
+    
+    float:left;
+}
+.player-title h5{
+    float:right;
+    padding-left:0px;
+    width:40px;
+    height:100%;
+    border-left:2px solid #ffcc00;
+}
+.player-title.lol{
+    background:#1062A0;
+}
+.player-title.hearthstone{
+    background:#CE9D27;
+}
+.player-title.dota{
+    background:#9D150E;
+}
+/* OW style limited to OW/LoL combinations*/
+.player-title.ow{
+    background:#FA9C1E;
+}
+.player-title.lol.ow{
+    background: linear-gradient(#1062A0 50%, #FA9C1E 50%);
+}
+.player-title.lol.hearthstone{
+    background: linear-gradient(#1062A0 50%, #CE9D27 50%);
+}
+.player-title.dota.hearthstone{
+    background: linear-gradient(#9D150E 50%, #CE9D27 50%);
+}
+.player-title.lol.dota{
+    background: linear-gradient(#1062A0 50%, #9D150E 50%);
+}
+/*Variable flag width supported for different flag proportions.*/
+.player-flag{
+    float:left;
+    height:100%;
+    border-right:2px solid #ffcc00;
+}
+.player-flag img{
+    height:100%;
+    width:auto;
+}
+.table{
+    font-size:0px;
+    width:auto;
+    height:100%;
+    float:none;
+    overflow:hidden;
+}
+.t-cell{
+    font-size:13px;
+    padding-top:3px;
+    display:inline-block;
+    height:50%;
+    width:50%;
+    float:left;
+}
+/*IM SO SORRY*/
+/*    top 2*/
+.t-cell:nth-child(-n+2){
+    border-bottom:1px solid #ffcc00;
+}
+/*    bottom 2*/
+.t-cell:nth-child(n+3){
+    border-top:1px solid #ffcc00;
+}
+/*    left 2*/
+.t-cell:nth-child(odd){
+    border-right:1px solid #ffcc00;
+}
+/*    right 2*/
+.t-cell:nth-child(even){
+    border-left:1px solid #ffcc00;
+}
+.logo-container{
+    width:100%;
+    margin-top:80px;
+}
+.logo-container a{
+    margin-right:50px;
+}
+.logo-container img{
+    width:300px;
+    height:auto;
+    display:inline-block;
+    vertical-align:middle;
+}
+.logo-container a:last-child{
+    margin-right:0px;
+}
+/*Swag Section*/
+.club-swag{
+    background-color: #7D1E7D;;
+    color:white;
+}
+.club-swag .width-50{
+    vertical-align:top;
+    padding-top:0;
+    padding-bottom:0;
+    margin:0;
+}
+.swag-grid{
+    font-size:0px;
+    width:100%;
+}
+.swag-item{
+    position: relative;
+    float:left;
+    overflow:hidden;
+    width:50%;
+    padding-bottom:50%;
+}
+.swag-item.si-wide{
+    width:100%;
+}
+.swag-item > img{
+    position:absolute;
+    width:100%;
+    height:auto;
+}
+.swag-overlay{
+    background: #ffcc00;
+}
+.swag-info{
+    width: 100%;
+    height:100%;
+    position:absolute;
+    -webkit-backface-visibility: hidden;
+    
+    opacity:0;
+    transition: opacity .3s ease-in-out;
+}
+.swag-info > div{
+    display:table;
+    width:100%;
+    height:100%;
+}
+.swag-info > div > p{
+    font-family: 'league-gothic', sans-serif;
+    font-size:100px;
+    font-weight:900;
+    letter-spacing: 2.5px;
+    text-align:center;
+    color:white;
+    display:table-cell;
+    vertical-align:middle;
+    text-shadow: 2px 2px 0px rgb(159,0,159);
+}
+.swag-item:hover .swag-info{
+    opacity:1;
+}
+.swag-item:hover .swag-overlay{
+    opacity: .3;
+}
+/*Get involved Section (50-50)*/
+.get-involved{
+    background:#0D949C;
+    color:white;
+    position:relative;
+}
+/*triangle details*/
+.get-involved:after, .get-involved:before{
+    content:"";
+/*borders each = 1/2 height for triangle, margin-top: -1/2  */
+    height: 300px;
+    box-sizing:border-box;
+    border-bottom: 150px solid transparent;
+    border-top: 150px solid transparent;
+    margin-top:-150px;
+/*    smoothing edges*/
+    -moz-transform: scale(.9999);
+    
+    position:absolute;
+    top:50%;
+    pointer-events: none
+}
+/*left/right borders determine width*/
+.get-involved:before{
+    left:0;
+    border-left: 40px solid #ffcc00;
+}
+.get-involved:after{
+    right:0;
+    border-right: 40px solid #ffcc00;
+}
+.get-involved .width-50 p{
+    margin-bottom:15px;
+}
+/* social connect buttons! */
+.block-social-links ul{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.block-social-links ul li{
+    text-align: center;
+    width: 20%;
+    margin: 2.5%;
+    height:auto;
+}
+.block-social-links ul li a{
+    display: table;
+    width: 100%;
+    height: 100%;
+    border-bottom: 0;
+}
+.block-social-links ul li a i{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 100px;
+}
+.block-social-links ul li:before {
+    content:'';
+    float:left;
+    padding-top:100%;
+}
+/*Footer Elements*/
+.copyright{
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+.copyright p{
+    font-size: 17px;
+}
+#connection img{
+    position:absolute;
+    bottom:-40px;
+    left:20px;
+}
+/*full width desktop*/
+@media screen and (min-width: 1600px){
+    .hero h1{
+        font-size:150px;
+    }
+/*styles for 'activate hd' button*/
+    .hd-option{
+        display:inline-block;
+        position:absolute;
+        left:40px;
+        top:17px;
+        width:80px;
+        height:40px;
+        text-align:center;
+        background:#eee;
+        color:#1F1F1F;
+        cursor:pointer;
+        border:2px solid #1F1F1F;
+    }
+    .hd-option .inner{
+        position:relative;
+        height:100%;
+        width:100%;
+        transition: all .3s linear;
+    }
+    .hd-option .inner.hd-active{
+        background:#611761;
+    }
+    .hd-option .inner p{
+        position:absolute;
+        font-weight:900;
+        font-size:20px;
+        top:0px;
+        left:42px;
+        line-height:36px;
+        transition: all .3s linear;
+    }
+    .hd-option .inner.hd-active p{
+        position:absolute;
+        top:0px;
+        left:7px;
+        line-height:36px;
+        color: white;
+    }
+    .hd-option .inner:after{
+        content:"";
+        box-sizing:border-box;
+        display:block;
+        position:Absolute;
+        top:-2px;
+        left:-2px;
+        background:white;
+        border:2px solid #1F1F1F;
+        height:40px;
+        width:40px;
+        transition: all .3s linear;
+    }
+    .hd-option .inner.hd-active:after{
+        left:42px;
+        background:#ffcc00;
+    }
+}
+/*landscape ipad*/
+@media screen and (max-width: 1041px){
+    .content-width{
+        max-width:1040px;
+        padding-left:30px;
+        padding-right:30px;
+    }
+        /*triangle details*/
+    .get-involved:after, .get-involved:before{
+        content:"";
+    /*borders each = 1/2 height for triangle, margin-top: -1/2  */
+        width: 300px;
+        max-width:100%;
+        height:50px;
+        margin-top:0;
+        border: 150px solid transparent;
+        border-bottom:none;
+    /*    smoothing edges*/
+        -moz-transform: scale(.9999);
+        position:absolute;
+    }
+    /*left/right borders determine width*/
+    .get-involved:before{
+        bottom:0px;
+        top:auto;
+        border-bottom: 40px solid #ffcc00;
+        left:initial;
+        right: calc(50% - 150px);
+    }
+    .get-involved:after{
+        top:0px;
+        bottom:auto;
+        border-top: 40px solid #ffcc00;
+        left:initial;
+        right: calc(50% - 150px);
+    }
+    .fancy-checkbox:hover{
+        border-radius:initial;
+    }
+    .fancy-checkbox.check-active{
+        border: 2px solid #ffcc00;
+        border-radius:25px;
+    }
+    li a:hover{
+        border-radius:0;
+    }
+}
+@media screen and (max-width: 982px){
+    .led-pic{
+        height:240px;
+        width:330px;
+    }
+    .led-card li{
+        width:35px;
+        height:35px;
+        margin-right:5px;
+        margin-top:0px;
+    }
+    .led-card li a i{
+        line-height:37px;
+        font-size:20px;
+    }
+    li a i.fa-youtube-play{
+        line-height:36px;
+        background: #e52d27;
+        color:white;
+    }
+    .leadership h3{
+        font-size:22px;
+        margin-bottom:2px;
+    }
+    .leadership h4{
+        font-size:17px;
+    }
+}
+@media screen and (max-width: 875px){
+    nav li:first-child{
+        margin-right:15%;
+    }
+    
+}
+/*force the nav to show above responsive size*/
+@media screen and (min-width: 770px){
+    nav .content-width{
+        display:block!important;
+    }
+}
+/*crucial ipad query*/
+@media screen and (max-width: 770px){
+    .content-wide{
+        padding: 0px 0px 50px;
+    }
+    .width-50{
+        width:100%;
+        padding-left:0!important;
+        padding-right:0!important;
+        display:inline-block;
+        vertical-align:top;
+    }
+    .width-50:last-child{
+        padding-top:60px;
+    }
+    .width-50#connection{
+        padding-top: 30px;
+    }
+    .burger{
+        display:block;
+        float:left;
+        height:75px;
+        width:75px;
+        text-align:center;
+        font-size:30px;
+        padding-top:20px;
+    }
+    nav img{
+        height:70px;
+        width:auto;
+        float:right;
+        position:static;
+        margin-right:32px;
+        margin-top:3px;
+        margin-left:0;
+    }
+    nav a:after, nav a:before{
+        display:none;
+    }
+    nav{
+        width:100%;
+        height:auto;
+    }
+    nav .content-width{
+        display:none;
+        max-width:100%;
+        width:100%;
+        float:left;
+        height:120px;
+        background: #eee;
+        top:75px;
+    }
+    .nav-left, .nav-right{
+        width:50%;
+        margin:0;
+        margin-left:0px;
+    }
+    nav ul{
+        width:100%;
+    }
+    nav ul li{
+        width:100%;
+        text-align:center;
+    }
+    .nav-left a, .nav-right a{
+         line-height:60px;
+         height: 60px;
+    }
+/*    Hero Section*/
+    .hero{
+        height:500px;
+        background-size: contain;
+        background-color:black;
+        background-position:center center;
+    }
+    .hero h1{
+        font-size:100px;
+        width:auto;
+        margin-left:-250px;
+        height:auto;
+        margin-top:-90px;
+        color:rgb(255,255,255);
+    }
+/*    Games Section*/
+    .game-item{
+/*override special n(2), n(5) styles*/
+        margin: 1%!important;
+        width:48%;
+        padding-bottom:47%;
+    }
+    .game-item .logo{
+        opacity: 1;
+    }
+    .swag-info{
+        opacity: 1;
+        width:auto;
+        height:auto;
+        margin-left:20px;
+        vertical-align:top;
+    }
+/*fixed image ribbons*/
+    .rib{
+        height:325px;
+        width:100%;
+    }
+    .get-involved{
+        position:relative;
+    }
+}
+/*breaking down after crucial static breakpoint*/
+@media screen and (max-width:760px){
+    .hero{
+        height:500px;
+        background-size: cover;
+        background-position:center center;
+    }
+    .competitive{
+        background-image: url('../img/bg.jpg');
+        background-size:contain;
+    }
+}
+@media screen and (max-width: 700px){
+    .hero h1{
+        font-size:80px;
+        margin-left:-210px;
+        margin-top:-60px;
+    }
+    .logo-container a{
+        margin:10px auto;
+    }
+    .logo-container img{
+        width:300px;
+        height:auto;
+        margin-right:0;
+    }
+    .logo-container a:last-child{
+        display:block;
+        margin: 0 auto;
+    }
+    .block-social-links ul li a i{
+        font-size: 60px;
+    }
+    .block-social-links ul li{
+        width: 150px;
+        margin: 10px;
+        max-width: calc(33% + 20px);
+    }
+    .block-social-links ul {
+        width: 350px;
+        margin: 0 auto;
+        justify-content: center;
+        max-width: 100%;
+    }
+}
+/*entering the phone zone*/
+@media screen and (max-width: 575px){
+    .hero{
+        height:500px;
+        background-position:bottom center;
+    }
+}
+@media screen and (max-width: 550px){
+    .argo{
+        height:400px;
+    }
+    .hero{
+    }
+    .hero h1{
+        font-size:60px;
+        margin-left:-150px;
+        margin-top:-65px;
+    }
+    .games .content-width{
+        width:100%;
+        padding-right:15px;
+        padding-left:15px;
+    }
+    .game-item{
+        margin:10px 0px 10px 0px!important;
+        width:100%;
+        padding-bottom:100%;
+        height:auto;
+    }
+    .swag-item img{
+        position:relative;
+    }
+    .swag-item{
+        width:100%;
+        height:auto;
+        margin:0;
+        padding:0;
+    }
+    .swag-info{
+        display:block;
+        font-size:50px;
+        position:absolute;
+        top:0;
+    }
+    .swag-info > div p{
+        font-size:70px;
+    }
+    
+    .swag-overlay{
+        display:none;
+    }
+    nav img{
+        margin-right:12px;
+    }
+}
+@media screen and (max-width: 500px){
+    .content-width{
+        padding-left:15px;
+        padding-right:15px;
+    }
+    nav .content-width{
+        height:240px;
+    }
+    .nav-left, .nav-right{
+        width:100%;
+    }
+    .led-card{
+        display:inline-block;
+        margin: 15px 0px 0px;
+    }
+    .player-card{
+        margin: 0px;
+        margin-top: 10px;
+    }
+    .logo-container{
+        margin-top:40px;
+    }
+    .logo-container img{
+        width:250px;
+    }
+    .rib{
+        background: url("") no-repeat;
+        background-size:cover;
+        background-position: center center;
+    }
+    .get-involved:after, .get-involved:before{
+        content:"";
+        border: 40px solid transparent;
+        border-bottom:none;
+        position:absolute;
+    }
+    .competitive .search{
+        max-width:100%;
+    }
+    .copyright{
+        position: static;
+        text-align: center;
+    }
+    #connection img{
+        display:none;
+    }
+}
+@media screen and (max-width: 420px){
+    .hero{
+        background-position:left center;
+    }
+}
+/*iphone 4? i dont even know*/
+@media screen and (max-width: 400px){
+    .hero h1{
+        margin-left:15px;
+        left:0;
+    }
+    .swag-info{
+        display:none;
+    }
+}
+@media screen and (max-width: 360px){
+/*    led blox to 2x2 square*/
+    .led-card li{
+        margin-right: 5px;
+    }
+    .led-card li:nth-child(n+3){
+        margin-top:5px;
+    }
+    .led-card li:nth-child(2){
+        margin-right:0px;
+    }
+    .led-title{
+        padding-left:10px;
+    }
+    .led-blox{
+        max-width:85px;
+        padding-right:10px;
+    }
+}

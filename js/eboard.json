@@ -1,0 +1,84 @@
+{
+    "eboard" : [
+    {
+        "name": "Jay Sobel",
+        "image": "img/jay_bg.jpg",
+        "title": "president",
+        "links" : [
+            {
+            "title" : "halo stats",
+            "href" : "http://halo.bungie.net/stats/halo3/careerstats.aspx?player=Matador%20Mono",
+            "icon" : "<img src='img/halo.jpg' alt='Halo Stats'>"
+            },
+            {
+            "title" : "Youtube",
+            "href" : "https://www.youtube.com/user/lamoaloca/videos",
+            "icon" : "<i class='fa fa-youtube-play'></i>"
+            }
+        ]
+    },
+    {
+        "name": "Leo Korf",
+        "image": "img/korf.jpg",
+        "title": "Treasurer",
+        "links" : []
+    },
+    {
+        "name": "Shane Kuo",
+        "image": "img/kuo.jpg",
+        "title": "Vice President",
+        "links" : [
+            {
+            "title" : "Facebook",
+            "href" : "https://www.facebook.com/shane.kuo.5",
+            "icon" : "<i class='fa fa-facebook'></i>"
+            },
+            {
+            "title" : "Instagram",
+            "href" : "https://instagram.com/knowthestatuskuo/",
+            "icon" : "<i class='fa fa-instagram'></i>"
+            }
+        ]
+    },
+    {
+        "name": "Michael Ketchum",
+        "image": "img/ketchum.jpg",
+        "title": "Smash Man",
+        "links" : [
+            {
+            "title" : "Smash Boards",
+            "href" : "http://smashboards.com/",
+            "icon" : "<img src='img/smash_icon.jpg' alt='Smash Boards'>"
+            },
+            {
+            "title" : "facebook",
+            "href" : "https://www.facebook.com/PotatoOfDarkness",
+            "icon" : "<i class='fa fa-facebook'></i>"
+            },
+            {
+            "title" : "Wombo Combo",
+            "href" : "https://www.youtube.com/watch?v=pD_imYhNoQ4",
+            "icon" : "<i class='fa fa-youtube-play'></i>"
+            }
+        ]
+    },
+    {
+        "name": "Freddy Amara",
+        "image": "img/freddy_bg.jpg",
+        "title": "Tech Guy",
+        "links" : [
+            {
+            "title" : "Youtube",
+            "href" : "https://www.youtube.com/user/Micioonthet",
+            "icon" : "<i class='fa fa-youtube-play'></i>"
+            }
+        ]
+    },
+    {
+        "name": "Matt Cocke",
+        "image": "img/matt_bg.jpg",
+        "title": "Slave Intern",
+        "links" : []
+    }
+    ]
+}
