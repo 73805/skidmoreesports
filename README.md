@@ -1,4 +1,4 @@
-## (Skidmore's eSports Club website)[http://skidmoreesports.club/]
+## [Skidmore's eSports Club website](http://skidmoreesports.club/)
 I designed and developed this single-page site in the summer of 2015 to get the club out on the web.
 
 The site provides some copy about the club, displays our ever-growing array of swag, and features a filter-able list of current players.
